@@ -3,7 +3,6 @@ import "./FormTodo.css";
 const FormTodo = ({ addTask }) => {
   const [value, setValue] = useState("");
   const handleSubmit = (e) => {
-    console.log(e.target);
     e.preventDefault();
     if (value) {
       addTask(value);
